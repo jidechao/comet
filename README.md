@@ -40,13 +40,11 @@ Superpowers handles **HOW** (technical design, planning, execution, wrap-up).
 Comet chains both into a five-phase automated pipeline.
 
 > [!IMPORTANT]
-> **0.3.7 Highlights** — One-step [CodeGraph](https://github.com/colbymchenry/codegraph) semantic code indexing (official: cost **↓16%**, tool calls **↓58%**); 
+> **0.3.9** — Review mode (`off|standard|thorough`) controls Build/Verify code review with project defaults; init/update now use optional dependency prompts, broader CLI i18n, stronger phase guards, and macOS executable bits.
 >
-> New **Beta context compression** cutting Build-phase input tokens by **25–30%**; 
-> New active context compression mechanism to release context consumed by reading specs and brainstorming, preserving window space for the subsequent Build phase.
-> 6 default-on workflow token optimizations; New `auto_transition` config for automatic or manual phase handoff; 
-> Hook+Rule anti-drift phase guard; Optional TDD mode and subagent dispatch confirmation; 
-> Large PRD split into multiple changes; Pre-archive confirmation with reopen, verify retry limit, systematic debugging interception, and verification completion check.
+> **0.3.8** — Adds Kimi Code support, safe multi-platform `comet uninstall`, extended subagent dispatch, shared progressive-loading references, update checks, and pre-commit formatting.
+>
+> **0.3.7** — Adds CodeGraph semantic indexing, Beta context compression, active context compression, token optimizations, `auto_transition`, phase guards, optional TDD, and safer archive/verification flow.
 >
 > See [NEWS.md](NEWS.md) for details.
 

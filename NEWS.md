@@ -14,12 +14,15 @@
 
 `comet init` 新增 `--language en|zh` 选项；`update` 命令完整支持中英文提示（横幅、npm 更新进度、摘要、CodeGraph 提示等）。新增 `src/commands/i18n.ts` 共享翻译表。
 
+### Review Mode
+
+新增 `review_mode: off|standard|thorough`，用于控制 Build / Verify 阶段的自动代码审查强度；full workflow 在离开 Build 前必须选择模式，hotfix/tweak 默认 `off`。项目级 `.comet/config.yaml` 也可配置默认值，新建 full workflow change 时会快照到 `.comet.yaml`。
+
 ### 其他
 
 - `comet init` 检测 Codex 插件缓存中已安装的 Superpowers（`~/.codex/plugins/cache/...`），避免重复安装（[#115](https://github.com/rpamis/comet/pull/115)）。
 - 中文术语规范化：`gate` 不再直译为"门"。
 - `comet uninstall` 多平台场景改为 checkbox 选择。
-- `.comet/config.yaml` 新增 `review_mode: off|standard|thorough` 项目级默认。
 - macOS 上 `bin/comet.js` 等脚本权限修复为 `100755`。
 
 ## 0.3.8 — 2026-06-13
